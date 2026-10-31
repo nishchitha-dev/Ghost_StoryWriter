@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ghostwriter-gemma-horror
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+      - key: FLASK_ENV
+        value: production
+      - key: GEMMA_MODEL
+        value: google/gemma-2-9b-it

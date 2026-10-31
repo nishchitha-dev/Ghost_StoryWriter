@@ -1,0 +1,6 @@
+{
+  "name": "GhostWriter — Stories from Beyond the Machine",
+  "description": "An AI-powered supernatural and digital horror story generator powered by Google Gemma open-weight models for Hacktoberfest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
